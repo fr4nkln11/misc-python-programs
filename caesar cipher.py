@@ -44,7 +44,7 @@ if __name__ == "__main__":
     # just a test		
     while True:
     	userinput = input("message, key: ")
-    	ui = userinput.split(", ")
+    	ui = userinput.split(",")
     	msg = ui[0]
     	key = int(ui[1])
     	print(cipher(msg, key), "\n")		
