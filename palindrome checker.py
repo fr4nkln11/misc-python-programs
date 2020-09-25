@@ -5,7 +5,6 @@ def palindromeCheck(string: str) -> str:
     else:
         return False
         
-if palindromeCheck("panap") == True:
-    print("True")
-else:
-    print("False")
+while True:
+    string = input(">")
+    print(palindromeCheck(string))
