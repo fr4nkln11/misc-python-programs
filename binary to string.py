@@ -1,3 +1,4 @@
+# convert input String to Binary and vice versa
 import re
 
 def string_bin(string):
@@ -13,9 +14,15 @@ def bin_string(binseq):
     string = ''.join(chr(int(i, 2)) for i in binseq)
     return string
     
-    
-while True:
-    str = input()
-    sb = string_bin(str)
-    print(sb)
-    print(bin_string(sb))
+if __name__ == "__main__":
+    while True:
+        print("type sb to convert string to binary")
+        print("type bs to convert binary to string")
+        
+        choice = input(': ')
+        if choice == "sb":
+            string = input("input the string you wish to convert: ")
+            print(f"\nBinary: {string_bin(string)}\n")
+        elif choice == "bs":
+            bin = input("input the binary sequence you wish to convert: ")
+            print(f"\nString: {bin_string(bin)}\n")
