@@ -1,14 +1,11 @@
 
 def validate(string, condition):
-    fail = 0
-    for i in string:
+    for fail, i in enumerate(string, start=1):
         if eval(f"'{i}'.{condition}()") == True:
             return True
-        else:
-            fail += 1
-            #print(fail)
-            if fail == len(string):
-                return False
+        #print(fail)
+        if fail == len(string):
+            return False
  
 conditions = "isalnum isalpha isdigit islower isupper"
 

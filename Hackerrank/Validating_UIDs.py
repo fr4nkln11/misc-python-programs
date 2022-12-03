@@ -13,7 +13,7 @@ if __name__ == "__main__":
             return False
         elif len(set(uid)) != len(uid):
             return False
-            
+
         digs = []
         ucs = []
         for char in uid:
@@ -23,7 +23,7 @@ if __name__ == "__main__":
                 ucs.append(char)
             if char not in an:
                 return False
-                
+
         if len(digs) < 3:
             return False
         if len(uc) < 2:
