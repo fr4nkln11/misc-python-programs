@@ -1,8 +1,10 @@
 def count_substring(string, sub_string):
-    count = []
-    for i in range(len(string)):
-        if string[i:i+len(sub_string)] == sub_string:
-            count.append("found")
+    count = [
+        "found"
+        for i in range(len(string))
+        if string[i : i + len(sub_string)] == sub_string
+    ]
+
     return len(count)
 
 

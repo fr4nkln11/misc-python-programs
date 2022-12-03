@@ -1,11 +1,11 @@
 if __name__ == '__main__':
-    N = int(input()) 
+    N = int(input())
     p_list = []
-    for i in range(N):
+    for _ in range(N):
         inp = input().split(' ')
-        
+
         cmd = inp[0]
-        
+
         if cmd == 'insert':
             p_list.insert(int(inp[1]),int(inp[2]))
         elif cmd == 'print':

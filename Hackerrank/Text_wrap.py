@@ -1,7 +1,7 @@
 def wrap(string, max_width):
     wrapped = []
     count = 0
-    
+
     for c in string:
         count += 1
         wrapped.append(c)

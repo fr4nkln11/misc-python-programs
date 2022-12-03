@@ -5,19 +5,19 @@ def shift(list, num):
 	this function shifts the position of an existing list or string and returns it as a new list
 	"""
 	try:
-		for i in range(num):
+		for _ in range(num):
 			first = list[0]
 			list.pop(0)
 			list.append(first)
-			
+
 		return list
 	except AttributeError:
-		list = [x for x in list]
-		for i in range(num):
+		list = list(list)
+		for _ in range(num):
 			first = list[0]
 			list.pop(0)
 			list.append(first)
-			
+
 		return list
 
 def cipher(string, key):

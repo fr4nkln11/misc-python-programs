@@ -1,9 +1,6 @@
 def palindromeCheck(string: str) -> str:
     string_reverse = string[::-1]
-    if string == string_reverse:
-        return True
-    else:
-        return False
+    return string == string_reverse
         
 while True:
     string = input(">")

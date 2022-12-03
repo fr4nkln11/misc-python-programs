@@ -1,11 +1,11 @@
 import re 
 
 def conv(n):
-    bins = re.sub(r'0b',r'',str(bin(n)))
-    octs = re.sub(r'0o',r'',str(oct(n)))
-    hexs = re.sub(r'0x',r'',str(hex(n)))
+    bins = re.sub(r'0b', r'', bin(n))
+    octs = re.sub(r'0o', r'', oct(n))
+    hexs = re.sub(r'0x', r'', hex(n))
     hexs = hexs.upper()
-    
+
     return [str(n), octs, hexs, bins]
 
 def print_formatted(number):
